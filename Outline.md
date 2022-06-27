@@ -11,14 +11,17 @@ Introduction to Data Structures
 Overview
 Queue
 •	Summary
+ methods for queue
 •	Example
 •	Try It
 Sets
 •	Summary
+ methods for sets
 •	Example
 •	Try It
 Trees
 •	Summary
+ methods for trees
 •	Example
 •	Try It
 
