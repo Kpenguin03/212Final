@@ -35,7 +35,7 @@ In python a queue can be created most easily with an array.
 
 
 ## Example
-
+To edit or run the program open the file: queueExample
 ``` Python
 #Initializing a queue
 queue = [] 
@@ -48,7 +48,7 @@ queue.append('b')
 queue.append('c')
 
 # This is currently how the queue looks
-['a', 'b', 'c']
+print(queue) #['a', 'b', 'c']
 
 # Because 'a' was the first of the data to be added it should be the first to leave
 queue.pop(0) # This will remove the 'a' from the first index value
@@ -60,60 +60,64 @@ print(queue) # only 'c' is left in our queue
 ## Try It
 Suppose there is a line at the DMV but not enough agents to help every one at once. So When you get there you check in and them the computer system adds your name to a list and then calls you to the counter when it is the correct persons turn. Assuming we want to call everyone up in the order they checked in, create a program that uses a queue to help add a name to the system then call them up in order. In the class below finish the three functions so that the provided names will correctly add and remove from the queue. 
 
+To edit or run the program open the file: queueTest
 ```python
 class dmvQueue:
 
     def __init__(self):
         #add your code here
-
+        pass
     def enqueue(self, value):
         #add your code here
+        pass
+        
 
     def dequeue(self):
         #add your code here
-
+        pass
 
 newQueue = dmvQueue()
-newQueue.enqueue(Mike)
-newQueue.enqueue(Sara)
-value = queue.dequeue()
+newQueue.enqueue('Mike')
+newQueue.enqueue('Sara')
+value = newQueue.dequeue()
 print(value)
 ```
 # SET 
-
-
 
 A set will contain data just like our queue but with some differences.
 A set will not allow duplicates. Also, they have no order, and because of 
 that we can not change the value at a specific index. Instead sets use hash values.
 
- 
+## Example
+To edit or run the program open the file: setExample
 ``` python
-#Create a set with a dictionary.
-
 myset = {'a', 'b', 'c', 'a'}
 
-print(set) # now you can see the duplicates will not show, and data can be in any order
+print(myset) # now you can see the duplicates will not show, and data can be in any order
 
 # Instead of append and pop use the add and remove methods
 
-myset.add('d')
-myset.add('b')
+myset.add('d') # adds 'd'
+myset.add('b') # adds nothing because 'b' is already in the set. 
 myset.remove('a')
 
-print(set) #  ‘b’ ‘c’ and ‘d’
+print(myset) #  'b' 'c' and 'd'
 
 # other methods for sets
-clear()	#Removes all the elements from the set
+myset.clear()	# Removes all the elements from the set
+print(myset) # see it's empty
 ```
 ## Try It
 
 For this challenge you will be provided with a list of numbers containing many duplicates. Using a stack you should be able to make a new list only containing one of each number. To make it a little more challenging try to also make a second list only containing the duplicates. 
+
+To edit or run the program open the file: setTest
 ```python
 class duplicates:
     numbers = [1,2,3,1,4,5,2,6,7,8,3,9,3,1,2,4,5,8,9,]
-    def (numbers)
-
+    def sepurate(numbers):
+        pass
+        #remove 'pass' and add your code here
 
 
 
@@ -137,6 +141,14 @@ this is a diagram to help you visualize how the nodes are connected
     (3)   (7)    (15)   (25)
 ```
 ## Example
+To edit or run the program open the file: treeExample
 ```python
+class Node:
+   def __init__(self, data): #creates a tree with a single node that has empty children nodes. 
+      self.left = None
+      self.right = None
+      self.data = data
+
+   def insert(self, data):
 
 ```
