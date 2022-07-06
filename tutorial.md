@@ -115,7 +115,7 @@ To edit or run the program open the file: setTest
 ```python
 class duplicates:
     numbers = [1,2,3,1,4,5,2,6,7,8,3,9,3,1,2,4,5,8,9,]
-    def sepurate(numbers):
+    def Separate (numbers):
         pass
         #remove 'pass' and add your code here
 
