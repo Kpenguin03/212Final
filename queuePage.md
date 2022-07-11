@@ -32,6 +32,8 @@ queue.pop(0) # This times removes 'b'
 ```
 
 ## Try It
-Lets look at a real world  [Example](212Final\212Final\queue\queueTest.py)
+Lets look at a real world  [Example](queueTest.py)
 
-Check the [Solution](212Final\212Final\queue\queueSolution.py) to the example above.
+Check the [Solution](queueSolution.py) to the example above.
+
+[Home](tutorial.md)

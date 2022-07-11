@@ -64,11 +64,16 @@ Now that we added some new values to the tree try to visualize how they are all 
 ## Traversing the Tree
 ```python
 def searchTree(self, root):
-
+   if node is not None:
+      yield from self.searchTree(node.left)
+      yield node.data
+      yield from self.searchTree(node.right)
+        
 ```
 
 ## Try IT
-[Example](212Final\212Final\tree\treeTest.py)
+[Example](treeTest.py)
 
-[Solution](212Final\212Final\tree\treeSolution.py)
+[Solution](treeSolution.py)
 
+[Home](tutorial.md)

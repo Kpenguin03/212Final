@@ -26,6 +26,8 @@ myset.update('d','f','g') # Replaces the current set data with new data
 ```
 ## Try It
 
-[Example](212Final\set\setTest.py)
+[Example](setTest.py)
 
-[Solution](212Final\set\setSolution.py)
+[Solution](setSolution.py)
+
+[Home](tutorial.md)
