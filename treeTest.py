@@ -5,38 +5,72 @@ It will take a long time to flip though every page until you find it.
 Instead you could open the book half way and decide if the page you are looking for
 is before or after the page you are currently looking at.
 Repeating this process will hep you find the page much faster. 
-Your task is to finish the traverse method. It should return the node that contains the value of 832. 
+Your task is to finish the inBook method.
 '''
-# This is provided for you to create the tree. It should look familiar to what you already learned.
-class textBook:
-   def __init__(self, data):
-      self.left = None
-      self.right = None
-      self.data = data
+# Textbook was created for you as a tree. 
+# Your task is complete the inBook method.
+# Your Method will be called at the end of the page with another method called findPage
 
-   def insert(self, data):
-# Compare the new value with the parent node
-    if self.data:
-        if data < self.data:
-            if self.left is None:
-               self.left = textBook(data)
+
+class TextBook:
+
+    class Node:
+
+        def __init__(self, data): # creates a left and right for each node. 
+       
+            self.data = data
+            self.left = None
+            self.right = None
+
+    def __init__(self):
+
+        self.root = None
+
+    def insert(self, data):
+
+        if self.root is None:
+            self.root = TextBook.Node(data)
+        else:
+            self._insert(data, self.root)  
+
+
+    def _insert(self, data, node): # add new data to the tree.
+
+        if data == node.data:
+            return None
+        elif data < node.data:           # If the new data is smaller than the existing data then it moves to the left. 
+            if node.left is None:
+                node.left = TextBook.Node(data)
             else:
-               self.left.insert(data)
-        elif data > self.data:
-            if self.right is None:
-                self.right = textBook(data)
+                self._insert(data, node.left)
+        else:
+            if node.right is None:            # If the new data is larger than the existing data then it moves to the right. 
+                node.right = TextBook.Node(data)
             else:
-                self.right.insert(data)
-    else:
-        self.data = data
+                self._insert(data, node.right)
+
+    def findPage(self, data): # Calls inBook
+
+        return self.inBook(data, self.root)  # Start at the root
 
 
-    def traverse(self, node):
+    def inBook(self, page, node):
+
         pass
-        # Your code here.
-    
-    root = textBook(500)  # We will make the half way point of the book the head node.
-    for i in range(1000): # Then add every page into a position in the tree.
-        root.insert(i)
-    
-    traverse(832)
+        # Add your code here.
+        # The end result should Print("Page Found!") if page is in book
+        # Otherwise Print("Page not in book.")"
+
+
+
+
+
+book = TextBook()
+root = 500      # This is the first node because it is half way though the book. 
+book.insert(root)
+for i in range(1001): # Add every page of the book to the tree.
+    book.insert(i)
+
+book.findPage(832) # We want to find the page of the book with the Science assignment on it. 
+
+
