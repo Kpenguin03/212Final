@@ -3,7 +3,7 @@
 The first type of data structure we are going to learn is called a queue.
 This type of structure should store information in the order it receives it and empty the information in the same order that it was received. In other words, if new data is added it can not be removed until all the data before it is removed first. 
 
-
+![](212Final\Images\queue-basic.png)
 ##  Enqueue
 When data is added to the queue it is called enqueue. This operation is O(1) efficiency.
 
