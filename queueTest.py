@@ -16,4 +16,4 @@ newQueue = dmvQueue()
 newQueue.enqueue('Mike')
 newQueue.enqueue('Sara')
 value = newQueue.dequeue()
-print(value)
+print(value) # Mike should be the only person to print because he is the only person that was dequeued from the line.
