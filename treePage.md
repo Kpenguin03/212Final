@@ -3,8 +3,7 @@
 
 A tree is similar to linked list but has its own unique organization. Data is stored in nodes. Each node points towards two child nodes, a left and right. Beside the head node, each node also had a parent node. The benefit of using a tree is, that the time it takes to find a specific value in the tree is O(log n).
 
-## Binary Search Trees in Real Life
-When we make decisions we are using trees in our head. Maybe you pick between going to a movie or going to sleep. If you pick to see a movie then you have new options. What Movie will you pick. After you pick then you have to decide where to sit or if you will get popcorn, each choice leads to new choice. However since the trees we are learning about are binary then we will only have to choices after each choice. 
+
 ## Recursion
 Before we dive into creating trees there is a new important skill you will want to learn. Recursion is the process of repeating a process. Recursion is the process of repeating a process. Recursion is the process of repeating a process. You get it now. 
 
@@ -59,13 +58,13 @@ We can only connect the new value if the child nodes are empty. If they are alre
     else:
         self.data = data
 
-   root = Node(10)
-   root.insert(5)
-   root.insert(20)
-   root.insert(3)
-   root.insert(7)
-   root.insert(15)
-   root.insert(25)
+root = Node(10)
+root.insert(5)
+root.insert(20)
+root.insert(3)
+root.insert(7)
+root.insert(15)
+root.insert(25)
 ```
 Now that we added some new values to the tree try to visualize how they are all connected. 
 ```python
@@ -96,6 +95,29 @@ def getHeight(self, node):
       return 1 + self.getHeight(node.right)
    else:
       return 1 
+```
+## Example Problem
+
+When we make decisions we are using trees in our head. Maybe you pick between going to a movie or going to sleep. If you pick to see a movie then you have new options. What Movie will you pick. After you pick then you have to decide where to sit or if you will get popcorn, each choice leads to new choice. However since the trees we are learning about are binary then we will only have to choices after each choice. 
+
+```python
+   def insert(self, data):
+# You can decide Yes or No
+    if self.data:
+        if data == Yes:
+            if self.left is None:
+               self.left = Node(data)
+            else:
+               self.left.insert(data)
+        elif data == No 
+            if self.right is None:
+                self.right = Node(data)
+            else:
+                self.right.insert(data)
+    else:
+        self.data = data
+
+root.insert(input('Are you hungry?' ))    
 ```
 
 ## Try IT

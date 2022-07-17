@@ -3,7 +3,8 @@
 The first type of data structure we are going to learn is called a queue.
 This type of structure should store information in the order it receives it and empty the information in the same order that it was received. In other words, if new data is added it can not be removed until all the data before it is removed first. 
 
-![](212Final\Images\queue-basic.png)
+
+![](Images/queue-basic.jpg)
 ##  Enqueue
 When data is added to the queue it is called enqueue. This operation is O(1) efficiency.
 
@@ -35,7 +36,7 @@ len(queue) # Finds the length and is O(1)
 
 ```
 
-## Example
+## Example Problem
 To help you understand how a queue works consider the line at the grocery store. If someone is already in line to pay for their groceries then you can not cut in front of them. That is very bad. The first person to get in line is the first person to pay then leave. When we add data to a queue it can not leave until the previous data pays for it's groceries. 
 ```python
  
