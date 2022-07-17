@@ -126,3 +126,4 @@ root.insert(input('Are you hungry?' ))
 [Solution](treeSolution.py)
 
 [Home](tutorial.md)
+![](Images/Tree.jpg)
